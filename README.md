@@ -95,5 +95,7 @@ DELETE /readings/:id/
 GET /statistics/
 ```
 
+> Please note that quotes for float values are used by design.
+
 ##### Statuses
 * 200, Success
