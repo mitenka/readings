@@ -73,6 +73,4 @@ def reading(pk):
 
 @app.route('/statistics/', methods=['GET'])
 def statistics():
-    return {
-        'statistics': 'statistics'
-    }
+    return Reading.get_statistics()
