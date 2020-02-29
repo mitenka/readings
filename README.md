@@ -1,3 +1,17 @@
+# Installation
+
+* Clone the repository.
+* Change to the application folder. 
+* Checkout (if not yet) `develop` branch.
+* Build Docker image and run its container like following.
+
+```
+$ docker build -t readings .
+$ docker run -p 8080:8080/tcp readings
+```
+
+# API Reference
+
 ## Objects
 ### Reading
 * `id : Integer`
@@ -80,3 +94,6 @@ DELETE /readings/:id/
 ```
 GET /statistics/
 ```
+
+##### Statuses
+* 200, Success
