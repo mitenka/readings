@@ -17,7 +17,7 @@ db.init_app(app)
 
 
 @app.errorhandler(404)
-def page_not_found():
+def page_not_found(_):
     return {'detail': 'Not found.'}, 404
 
 
